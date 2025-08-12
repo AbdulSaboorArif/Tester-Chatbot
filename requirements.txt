@@ -1,6 +1,6 @@
 openai
 openai-agents
-fastapi
+fastapi[standard]
 pydantic
 python-dotenv
 nest_asyncio
