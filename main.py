@@ -38,9 +38,9 @@ run_config = RunConfig(
     tracing_disabled=True,
 )
 
-@cl.on_chat_start
-async def start():
-    await cl.Message(content="Welcome to the AI Chatbot Agent!").send()
+# @cl.on_chat_start
+# async def start():
+#     await cl.Message(content="Welcome to the AI Chatbot Agent!").send()
 
 @function_tool
 def get_updated_products(query: str) -> str:
