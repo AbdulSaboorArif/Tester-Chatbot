@@ -6,8 +6,6 @@ from agents import Agent, Runner, AsyncOpenAI ,OpenAIChatCompletionsModel, funct
 from dotenv import load_dotenv, find_dotenv
 from fastapi import FastAPI
 from pydantic import BaseModel
-import nest_asyncio
-nest_asyncio.apply() 
 load_dotenv(find_dotenv())
 
 
