@@ -2,7 +2,6 @@
 # ############################# AI Chatbot Agent Integrate with Next JS Website #############################
 
 import os
-import chainlit as cl
 from agents import Agent, Runner, AsyncOpenAI ,OpenAIChatCompletionsModel, function_tool, RunConfig, RunContextWrapper
 from dotenv import load_dotenv, find_dotenv
 from fastapi import FastAPI
