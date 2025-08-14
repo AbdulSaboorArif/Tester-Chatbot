@@ -1,16 +1,33 @@
 
-# ############################# AI Chatbot Agent Integrate with Next JS Website #############################
+#  ############################# AI Chatbot Agent Integrate with Next JS Website #############################
 
 import os
 from agents import Agent, Runner, AsyncOpenAI ,OpenAIChatCompletionsModel, function_tool, RunConfig, RunContextWrapper
 from dotenv import load_dotenv, find_dotenv
 from fastapi import FastAPI
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware 
 load_dotenv(find_dotenv())
 
 
 # FastAPI app
 app = FastAPI()
+
+# Configuration CORS
+# Replace 'http://localhost:3000' with your Next.js frontend URL
+origins = [
+    "http://localhost:3000",  # Next.js frontend URL
+    "https://final-project-ecommerce-website.vercel.app/",  # Vercel deployment URL
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins = origins,
+    allow_credentials = True,
+    allow_methods = ["*"],
+    allow_headers = ["*"],
+)
+
 
 
 
