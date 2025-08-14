@@ -18,6 +18,7 @@ app = FastAPI()
 origins = [
     "http://localhost:3000",  # Next.js frontend URL
     "https://final-project-ecommerce-website.vercel.app/",  # Vercel deployment URL
+    "https://tester-chatbot.onrender.com/chat",  # Render deployment URL
 ]
 
 app.add_middleware(
