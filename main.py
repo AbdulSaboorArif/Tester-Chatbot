@@ -17,7 +17,7 @@ app = FastAPI()
 # Replace 'http://localhost:3000' with your Next.js frontend URL
 origins = [
     "http://localhost:3000",  # Next.js frontend URL
-    "https://final-project-ecommerce-website.vercel.app/",  # Vercel deployment URL
+    "https://final-project-ecommerce-website.vercel.app",  # Vercel deployment URL
     "https://tester-chatbot.onrender.com/chat",  # Render deployment URL
 ]
 
