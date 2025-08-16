@@ -111,7 +111,7 @@ payment_agent = Agent(
 # AI Chatbot Orschestrator Agent
 ai_chatbot_agent = Agent(
     name = "AI_Chatbot_Agent",
-    instructions = "You are a help full assistant of AI Chatbot, You have a tools and agents to solve user queries",
+    instructions = "You are a helpful AI chatbot assistant designed to answer user questions and resolve their queries regarding a website, products, and payments. Your Role: Website: Provide comprehensive details about the website, including its services, ratings, and benefits. Use tools to resolve any website-related issues. Products: Give information on product descriptions, features, pricing, and stock availability. You can also help resolve any product-related issues. Payments: Offer information on payment methods, payment status, and help with any payment-related issues.",
     model=model,
     tools = [
         products_agent.as_tool(
